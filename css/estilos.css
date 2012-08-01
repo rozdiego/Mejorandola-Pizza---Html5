@@ -1,0 +1,192 @@
+@font-face
+{
+	font-family: "Freddito";
+	src: url("../font/KomikaTitle-webfont.eot");
+	src: url("../font/KomikaTitle-webfont.eot?#iefix") format("embedded-opentype"),
+		 url("../font/KomikaTitle-webfont.woff") format("woff"),
+		 url("../font/KomikaTitle-webfont.ttf") format("truetype"),
+		 url("../font/KomikaTitle-webfont.svg#KomikaTitleRegular") format("svg");
+}
+
+body
+{
+	background: #800;
+	font-family: "Helvetica",Arial;
+	font-size: 16px;
+	margin: 0;
+	text-align: center;
+}
+footer, header, section
+{
+	background: white;
+	border-radius: 0.5em;
+	/*-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-ms-border-radius: 0.5em;
+	-o-border-radius: 0.5em;*/
+	box-shadow: rgba(0,0,0,0.2) 0px 5px 10px;
+	margin: 1em auto;
+	padding: 1em;
+	width: 90%;
+}
+header
+{
+	background: url("../image/logo.png") no-repeat 10px center, 
+				url("../image/mantel.jpg");
+}
+header h1
+{
+	font-family: "Freddito";
+	font-size: 2.5em;
+	text-shadow: rgba(255,255,255,0.8) 2px 2px 10px;
+	transition: all 1s ease-in-out;
+}
+header h1:hover
+{
+	color: white;
+	text-shadow: #DDD 0px 2px 1px,
+				 #DDD 2px 4px 2px,
+				 #DDD 4px 6px 3px,
+				 #DDD 6px 8px 4px;
+	transform: rotate(7deg) rotateX(30deg) skewX(-5deg);
+}
+
+#formulario
+{
+	background: #FCAC00;
+	border-radius: 0.5em;
+	color: white;
+	font-size: 1.8em;
+	margin: 0.5em auto;
+	padding: 0.5em;
+	width: 70%;
+}
+
+#formulario input
+{
+	border:none;
+	display: block;
+	margin:  0.5em auto;
+	width: 60%;
+}
+
+
+#formulario input[type="submit"]
+{
+	background: #721B00;
+	border-radius: 0.5em;
+	box-shadow: rgba(0,0,0,0.5) 10px -10px 10px inset;
+	color: white;
+	cursor: pointer;
+	font-weight: bold;
+	width: 61%;
+}
+
+#historia
+{
+	background: #721B00;
+	border-radius: 0.3em;
+	box-shadow: #000 2px 2px 10px inset;
+	color: white;
+	column-count: 3;
+	column-rule: 2px solid #aaa;
+	column-gap: 3em;
+	padding: 1em;
+	text-align: justify;
+	text-shadow: rgba(0,0,0,0.8) 2px 2px 10px;
+}
+
+#historia p:first-child
+{
+	margin-top: 0.5em;
+}
+#historia p:first-child
+{
+	margin-top: 0.5em;
+}
+#pizzamaker section
+{
+	display: inline-block;
+	margin: 0;
+	vertical-align: top;
+}
+#pizzamaker
+{
+	background: #721B00;
+	box-shadow: #000 0px 5px 30px inset;
+	display: none;
+	margin: 0;
+	padding: 0.2em;
+	width: 100%;
+}
+#pizzamaker #ingredientes
+{
+	margin: 1%;
+	padding: 0%;
+	width: 68%;
+}
+#pizzamaker #ingredientes article
+{
+	background: #D88B00;
+	border-radius: 0.3em;
+	box-shadow: 1px 1px 3px lightgrey;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 0.9em;
+	height: 280px;
+	margin: 1.5% 0 1% 2%;
+	padding: 0;
+	transition: all 1s linear;
+	vertical-align: top;
+	width: 29%;
+}
+#pizzamaker #ingredientes article:hover
+{
+	background: #000 !important;
+	transform: scale(1.2) rotate(-5deg);
+}
+#pizzamaker #ingredientes article:nth-child(even)
+{
+	background: #AC2800;
+}
+#pizzamaker #pizza
+{
+	margin: 1% 0;
+	width: 26%;
+}
+
+@media screen and (max-width: 960px)
+{
+	#historia
+	{
+		column-count: 2;
+	}
+	#pizzamaker section
+	{
+		width: 45% !important;
+	}
+	#pizzamaker #ingredientes article
+	{
+		width: 90% !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
